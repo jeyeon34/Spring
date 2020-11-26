@@ -1,2 +1,6 @@
-package com.jeyeon.demorestapi.events;public interface EventRepository {
+package com.jeyeon.demorestapi.events;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface EventRepository extends JpaRepository<Event, Integer> {
 }
